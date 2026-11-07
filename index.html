@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Hendrawan | Admin Support & Asset Operation Specialist</title>
+    
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            800: '#1e293b',
+                            900: '#0f172a',
+                            950: '#0a0f1d',
+                        },
+                        gold: {
+                            400: '#fbbf24',
+                            500: '#d97706',
+                            600: '#b45309',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts & FontAwesome Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+            color: #1e293b;
+        }
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #d97706 0%, #b45309 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .navy-glass {
+            background: rgba(15, 23, 42, 0.95);
+            backdrop-filter: blur(10px);
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-gold-500 selection:text-white">
+
+    <!-- Header / Navbar -->
+    <header class="fixed w-full top-0 z-50 navy-glass border-b border-slate-800 text-white transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo / Name -->
+                <a href="#hero" class="flex items-center space-x-3 group">
+                    <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-gold-400 to-gold-600 flex items-center justify-center font-bold text-navy-950 text-xl shadow-lg group-hover:scale-105 transition-transform">
+                        MH
+                    </div>
+                    <div>
+                        <span class="text-lg font-bold tracking-tight block">M. Hendrawan</span>
+                        <span class="text-xs text-gold-400 block -mt-1 font-medium">Administrasi Operasional</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex space-x-8 text-sm font-medium">
+                    <a href="#hero" class="text-slate-300 hover:text-gold-400 transition-colors">Beranda</a>
+                    <a href="#about" class="text-slate-300 hover:text-gold-400 transition-colors">Tentang Saya</a>
+                    <a href="#experience" class="text-slate-300 hover:text-gold-400 transition-colors">Pengalaman</a>
+                    <a href="#skills" class="text-slate-300 hover:text-gold-400 transition-colors">Keahlian & K3</a>
+                    <a href="#contact" class="text-slate-300 hover:text-gold-400 transition-colors">Kontak</a>
+                </nav>
+
+                <!-- CTA Header Button -->
+                <div class="hidden md:block">
+                    <a href="#contact" class="px-5 py-2.5 rounded-lg bg-gold-500 hover:bg-gold-600 text-navy-950 font-semibold text-sm transition-all duration-300 shadow-md hover:shadow-lg inline-flex items-center gap-2">
+                        <i class="fa-solid fa-paper-plane text-xs"></i> Hubungi Saya
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-slate-300 hover:text-white focus:outline-none p-2">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-navy-900 border-b border-slate-800 px-4 pt-2 pb-6 space-y-3">
+            <a href="#hero" class="mobile-link block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-gold-400 hover:bg-slate-800">Beranda</a>
+            <a href="#about" class="mobile-link block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-gold-400 hover:bg-slate-800">Tentang Saya</a>
+            <a href="#experience" class="mobile-link block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-gold-400 hover:bg-slate-800">Pengalaman</a>
+            <a href="#skills" class="mobile-link block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-gold-400 hover:bg-slate-800">Keahlian & K3</a>
+            <a href="#contact" class="mobile-link block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-gold-400 hover:bg-slate-800">Kontak</a>
+        </div>
+    </header>
+
+    <!-- Main Content Wrapper -->
+    <main class="pt-20">
+
+        <!-- Hero Section -->
+        <section id="hero" class="relative min-h-[90vh] flex items-center justify-center bg-gradient-to-b from-slate-900 via-navy-900 to-navy-950 text-white overflow-hidden py-16">
+            <!-- Background Decorative Grid -->
+            <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#d97706_1px,transparent_1px)] [background-size:24px_24px]"></div>
+            
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    
+                    <!-- Text Side -->
+                    <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-gold-500/10 border border-gold-500/30 text-gold-400 text-xs sm:text-sm font-medium">
+                            <i class="fa-solid fa-circle-check text-xs"></i> Portfolio Profesional
+                        </div>
+                        
+                        <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight">
+                            Mewujudkan <span class="gold-gradient-text">Akurasi Data</span> & Ketertiban Operasional Aset
+                        </h1>
+                        
+                        <p class="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
+                            Lulusan S1 Teknik Elektro dengan spesialisasi Administrasi Operasional, Pengolahan Data Rekonsiliasi, Monitoring Lapangan, serta Integrasi Budaya K3 & 5R.
+                        </p>
+                        
+                        <div class="pt-4 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                            <a href="#experience" class="w-full sm:w-auto px-7 py-3.5 rounded-xl bg-gradient-to-r from-gold-500 to-gold-600 hover:from-gold-600 hover:to-gold-700 text-navy-950 font-bold shadow-xl hover:shadow-gold-500/20 transition-all text-center">
+                                Jelajahi Pengalaman Kerja
+                            </a>
+                            <a href="#contact" class="w-full sm:w-auto px-7 py-3.5 rounded-xl border border-slate-700 hover:border-gold-500 text-slate-200 hover:text-white bg-slate-900/50 hover:bg-slate-800 transition-all text-center font-medium">
+                                Hubungi Saya
+                            </a>
+                        </div>
+
+                        <!-- Key Highlight Stats Badge -->
+                        <div class="pt-8 border-t border-slate-800/80 grid grid-cols-3 gap-4 text-center lg:text-left max-w-lg mx-auto lg:mx-0">
+                            <div>
+                                <p class="text-2xl font-bold text-white">3.53</p>
+                                <p class="text-xs text-slate-400">IPK S1 Elektro</p>
+                            </div>
+                            <div>
+                                <p class="text-2xl font-bold text-gold-400">K3 & 5R</p>
+                                <p class="text-xs text-slate-400">Tersertifikasi</p>
+                            </div>
+                            <div>
+                                <p class="text-2xl font-bold text-white">100%</p>
+                                <p class="text-xs text-slate-400">Akurasi Rekap Data</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Visual Profile Card Side -->
+                    <div class="lg:col-span-5 flex justify-center">
+                        <div class="relative w-full max-w-md">
+                            <div class="absolute -inset-1 bg-gradient-to-r from-gold-500 to-amber-700 rounded-3xl blur opacity-30 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
+                            
+                            <div class="relative bg-slate-900 border border-slate-800 rounded-3xl p-6 sm:p-8 shadow-2xl text-slate-200 space-y-6">
+                                <div class="flex items-center space-x-4">
+                                    <div class="w-16 h-16 rounded-2xl bg-slate-800 border-2 border-gold-500/50 flex items-center justify-center text-gold-400 text-2xl font-bold">
+                                        <i class="fa-solid fa-user-shield"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xl font-bold text-white">Muhammad Hendrawan</h3>
+                                        <p class="text-xs text-slate-400">Palembang, Sumatera Selatan</p>
+                                        <div class="inline-block px-2.5 py-0.5 rounded-full bg-emerald-500/10 text-emerald-400 text-xs font-semibold mt-1">
+                                            Siap Berkontribusi
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="space-y-3 text-xs sm:text-sm border-t border-b border-slate-800 py-4">
+                                    <div class="flex justify-between items-center">
+                                        <span class="text-slate-400">Pendidikan</span>
+                                        <span class="font-medium text-slate-200">S1 Teknik Elektro (UM Palembang)</span>
+                                    </div>
+                                    <div class="flex justify-between items-center">
+                                        <span class="text-slate-400">Posisi Saat Ini</span>
+                                        <span class="font-medium text-gold-400">Admin Divisi Dermaga</span>
+                                    </div>
+                                    <div class="flex justify-between items-center">
+                                        <span class="text-slate-400">Perusahaan</span>
+                                        <span class="font-medium text-slate-200">PT Selatan Agro Makmur Lestari</span>
+                                    </div>
+                                </div>
+
+                                <div class="space-y-2">
+                                    <p class="text-xs font-semibold text-slate-400 tracking-wider uppercase">Fokus Keahlian</p>
+                                    <div class="flex flex-wrap gap-1.5">
+                                        <span class="px-2.5 py-1 rounded bg-slate-800 text-slate-300 text-xs">Administrasi Operasional</span>
+                                        <span class="px-2.5 py-1 rounded bg-slate-800 text-slate-300 text-xs">Rekonsiliasi Data</span>
+                                        <span class="px-2.5 py-1 rounded bg-slate-800 text-slate-300 text-xs">Monitoring Dermaga</span>
+                                        <span class="px-2.5 py-1 rounded bg-slate-800 text-slate-300 text-xs">K3 & Safety</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="py-20 bg-white border-b border-slate-200">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <h2 class="text-xs uppercase font-bold text-gold-600 tracking-widest mb-2">PROFIL PROFESIONAL</h2>
+                    <p class="text-3xl sm:text-4xl font-extrabold text-navy-900">Tentang Saya</p>
+                    <div class="w-16 h-1 bg-gold-500 mx-auto mt-4 rounded-full"></div>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    <!-- Bio Text -->
+                    <div class="lg:col-span-7 space-y-6 text-slate-600 text-base leading-relaxed">
+                        <p class="text-lg text-slate-800 font-medium leading-relaxed">
+                            Saya adalah lulusan <strong class="text-navy-900">S1 Teknik Elektro Universitas Muhammadiyah Palembang</strong> (IPK 3,53) dengan pengalaman kerja langsung di lingkungan operasional bertekanan tinggi seperti Pabrik Kelapa Sawit (PT Selatan Agro Makmur Lestari) dan lingkungan pemeliharaan kelistrikan (PT PLN UPDK Keramasan).
+                        </p>
+                        <p>
+                            Memiliki kompetensi solid dalam <strong class="text-navy-900">administrasi operasional, monitoring aktivitas lapangan, pengolahan & rekonsiliasi data</strong>, serta koordinasi absensi/SPL. Saya juga dibekali pemahaman K3 Umum, identifikasi potensi bahaya, analisis risiko, dan budaya 5R yang menjamin kelancaran aset serta keselamatan kerja.
+                        </p>
+                        
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
+                            <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 flex items-start space-x-3">
+                                <div class="p-2.5 bg-navy-900 text-gold-400 rounded-lg shrink-0">
+                                    <i class="fa-solid fa-list-check"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-navy-900 text-sm">Ketelitian & Akurasi</h4>
+                                    <p class="text-xs text-slate-500 mt-0.5">Memastikan zero-error dalam proses closing bulanan/mingguan.</p>
+                                </div>
+                            </div>
+
+                            <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 flex items-start space-x-3">
+                                <div class="p-2.5 bg-navy-900 text-gold-400 rounded-lg shrink-0">
+                                    <i class="fa-solid fa-hard-hat"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-navy-900 text-sm">Awareness K3 & 5R</h4>
+                                    <p class="text-xs text-slate-500 mt-0.5">Berkomitmen pada keselamatan dan penataan lingkungan kerja rapi.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Highlight Cards Side -->
+                    <div class="lg:col-span-5 grid grid-cols-1 gap-4">
+                        <div class="p-6 rounded-2xl bg-navy-950 text-white shadow-xl space-y-3 relative overflow-hidden">
+                            <div class="absolute -right-4 -bottom-4 text-slate-800 text-8xl opacity-30 font-bold">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                            </div>
+                            <span class="text-xs font-semibold text-gold-400 uppercase tracking-wider">Pendidikan Terakhir</span>
+                            <h3 class="text-xl font-bold">S1 Teknik Elektro</h3>
+                            <p class="text-sm text-slate-300">Universitas Muhammadiyah Palembang</p>
+                            <div class="pt-2 flex justify-between items-center text-xs text-slate-400 border-t border-slate-800">
+                                <span>Periode: 2019 – 2023</span>
+                                <span class="px-2 py-1 bg-gold-500/20 text-gold-400 rounded font-bold">IPK 3.53 / 4.00</span>
+                            </div>
+                        </div>
+
+                        <div class="p-6 rounded-2xl bg-slate-100 border border-slate-200 text-slate-800 shadow-sm space-y-3">
+                            <span class="text-xs font-semibold text-gold-600 uppercase tracking-wider">Area Kontribusi Utama</span>
+                            <ul class="text-xs sm:text-sm space-y-2 text-slate-700">
+                                <li class="flex items-center gap-2">
+                                    <i class="fa-solid fa-check text-gold-600"></i> Monitoring Aktivitas Dermaga & Jukung/Ponton
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <i class="fa-solid fa-check text-gold-600"></i> Rekonsiliasi & Input Data Weightbridge
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <i class="fa-solid fa-check text-gold-600"></i> Pengelolaan Administrasi Kontrak & Gaji
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience & Projects Section -->
+        <section id="experience" class="py-20 bg-slate-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <h2 class="text-xs uppercase font-bold text-gold-600 tracking-widest mb-2">REKAM JEJAK KERJA</h2>
+                    <p class="text-3xl sm:text-4xl font-extrabold text-navy-900">Pengalaman Pengelolaan & Operasional</p>
+                    <div class="w-16 h-1 bg-gold-500 mx-auto mt-4 rounded-full"></div>
+                </div>
+
+                <!-- Experience Cards Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    <!-- Experience Card 1: Utama -->
+                    <div class="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-all border border-slate-200 flex flex-col justify-between group">
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="px-3 py-1 bg-navy-900 text-gold-400 text-xs font-bold rounded-full">Utama</span>
+                                <span class="text-xs font-medium text-slate-500">Nov 2025 – Saat Ini</span>
+                            </div>
+                            <h3 class="text-lg font-bold text-navy-900 group-hover:text-gold-600 transition-colors">Administrasi Divisi Dermaga</h3>
+                            <p class="text-sm font-semibold text-slate-700 mt-1">PT Selatan Agro Makmur Lestari (SPO Group)</p>
+                            <p class="text-xs text-slate-500 mb-4">OKI, Sumatera Selatan</p>
+                            
+                            <ul class="text-xs text-slate-600 space-y-2 mb-6 border-t border-slate-100 pt-4">
+                                <li class="flex items-start gap-2">
+                                    <i class="fa-solid fa-angle-right text-gold-500 mt-0.5"></i>
+                                    <span>Pengolahan, rekapitulasi, & rekonsiliasi data operasional dermaga secara rutin.</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i class="fa-solid fa-angle-right text-gold-500 mt-0.5"></i>
+                                    <span>Monitoring aktivitas jukung/ponton & pengarsipan dokumen pendukung.</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i class="fa-solid fa-angle-right text-gold-500 mt-0.5"></i>
+                                    <span>Pengelolaan absensi, SPL, serta bantuan operasional Operator Weightbridge.</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i class="fa-solid fa-angle-right text-gold-500 mt-0.5"></i>
+                                    <span>Administrasi kontrak kerja dan realisasi gaji Pembongkar TBS.</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="flex flex-wrap gap-1.5 pt-4 border-t border-slate-100">
+                            <span class="px-2 py-0.5 bg-slate-100 text-slate-600 text-[11px] rounded">Rekonsiliasi Data</span>
+                            <span class="px-2.5 py-0.5 bg-slate-100 text-slate-600 text-[11px] rounded">Weightbridge</span>
+                        </div>
+                    </div>
+
+                    <!-- Experience Card 2: Magang PLN -->
+                    <div class="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-all border border-slate-200 flex flex-col justify-between group">
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="px-3 py-1 bg-amber-500/10 text-amber-700 text-xs font-bold rounded-full">Teknis / Magang</span>
+                                <span class="text-xs font-medium text-slate-500">Agt 2022 – Sep 2022</span>
+                            </div>
+                            <h3 class="text-lg font-bold text-navy-900 group-hover:text-gold-600 transition-colors">Maintenance Intern</h3>
+                            <p class="text-sm font-semibold text-slate-700 mt-1">PT PLN (Persero) UPDK Keramasan</p>
+                            <p class="text-xs text-slate-500 mb-4">Palembang, Sumatera Selatan</p>
+                            
+                            <ul class="text-xs text-slate-600 space-y-2 mb-6 border-t border-slate-100 pt-4">
+                                <li class="flex items-start gap-2">
+                                    <i class="fa-solid fa-angle-right text-gold-500 mt-0.5"></i>
+                                    <span>Penggantian & pemindahan battery bank GT2 ke Westing House 2 (PLN Keramasan).</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i class="fa-solid fa-angle-right text-gold-500 mt-0.5"></i>
+                                    <span>Pemasangan charger baterai pada instalasi PLTG 1.</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i class="fa-solid fa-angle-right text-gold-500 mt-0.5"></i>
+                                    <span>Pengukuran berat massa dan tegangan listrik baterai PLTG 1 & PLTG 2.</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="flex flex-wrap gap-1.5 pt-4 border-t border-slate-100">
+                            <span class="px-2 py-0.5 bg-slate-100 text-slate-600 text-[11px] rounded">Pengukuran Tegangan</span>
+                            <span class="px-2.5 py-0.5 bg-slate-100 text-slate-600 text-[11px] rounded">Battery Bank</span>
+                        </div>
+                    </div>
+
+                    <!-- Experience Card 3: Online Shop -->
+                    <div class="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-all border border-slate-200 flex flex-col justify-between group">
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="px-3 py-1 bg-slate-100 text-slate-600 text-xs font-bold rounded-full">Administrasi Stok</span>
+                                <span class="text-xs font-medium text-slate-500">Jan 2023 – Mei 2025</span>
+                            </div>
+                            <h3 class="text-lg font-bold text-navy-900 group-hover:text-gold-600 transition-colors">Admin Online Shop</h3>
+                            <p class="text-sm font-semibold text-slate-700 mt-1">TOKEE_OLD.THINGS</p>
+                            <p class="text-xs text-slate-500 mb-4">Palembang, Sumatera Selatan</p>
+                            
+                            <ul class="text-xs text-slate-600 space-y-2 mb-6 border-t border-slate-100 pt-4">
+                                <li class="flex items-start gap-2">
+                                    <i class="fa-solid fa-angle-right text-gold-500 mt-0.5"></i>
+                                    <span>Mengelola dan memperbarui data persediaan (stok) barang secara akurat.</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i class="fa-solid fa-angle-right text-gold-500 mt-0.5"></i>
+                                    <span>Pencatatan pesanan masuk dan penanganan komunikasi pelanggan.</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i class="fa-solid fa-angle-right text-gold-500 mt-0.5"></i>
+                                    <span>Menyiapkan dan mengemas barang sesuai spesifikasi pesanan.</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="flex flex-wrap gap-1.5 pt-4 border-t border-slate-100">
+                            <span class="px-2 py-0.5 bg-slate-100 text-slate-600 text-[11px] rounded">Stock Control</span>
+                            <span class="px-2.5 py-0.5 bg-slate-100 text-slate-600 text-[11px] rounded">Customer Service</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- My Skills & Certifications Section -->
+        <section id="skills" class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <h2 class="text-xs uppercase font-bold text-gold-600 tracking-widest mb-2">KOMPETENSI TERUJI</h2>
+                    <p class="text-3xl sm:text-4xl font-extrabold text-navy-900">Keahlian & Sertifikasi K3</p>
+                    <div class="w-16 h-1 bg-gold-500 mx-auto mt-4 rounded-full"></div>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                    
+                    <!-- Left: Technical & Operational Badges -->
+                    <div class="lg:col-span-7 space-y-8">
+                        <div>
+                            <h3 class="text-lg font-bold text-navy-900 mb-4 flex items-center gap-2">
+                                <i class="fa-solid fa-laptop-code text-gold-600"></i> Pengolahan Data & Software
+                            </h3>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-4 py-2 rounded-xl bg-slate-100 text-slate-800 font-medium text-sm border border-slate-200 hover:border-gold-500 hover:bg-gold-50 transition-colors shadow-sm">
+                                    <i class="fa-regular fa-file-excel text-green-600 mr-2"></i> Microsoft Excel (Advanced Data)
+                                </span>
+                                <span class="px-4 py-2 rounded-xl bg-slate-100 text-slate-800 font-medium text-sm border border-slate-200 hover:border-gold-500 hover:bg-gold-50 transition-colors shadow-sm">
+                                    <i class="fa-regular fa-file-word text-blue-600 mr-2"></i> Microsoft Word (Pengarsipan)
+                                </span>
+                                <span class="px-4 py-2 rounded-xl bg-slate-100 text-slate-800 font-medium text-sm border border-slate-200 hover:border-gold-500 hover:bg-gold-50 transition-colors shadow-sm">
+                                    <i class="fa-solid fa-diagram-project text-purple-600 mr-2"></i> Microsoft Visio
+                                </span>
+                                <span class="px-4 py-2 rounded-xl bg-slate-100 text-slate-800 font-medium text-sm border border-slate-200 hover:border-gold-500 hover:bg-gold-50 transition-colors shadow-sm">
+                                    <i class="fa-solid fa-database text-navy-900 mr-2"></i> Data Entry & Rekonsiliasi
+                                </span>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h3 class="text-lg font-bold text-navy-900 mb-4 flex items-center gap-2">
+                                <i class="fa-solid fa-shield-halved text-gold-600"></i> Keselamatan Kerja & Teknis
+                            </h3>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-4 py-2 rounded-xl bg-amber-50 text-amber-900 font-medium text-sm border border-amber-200 shadow-sm">
+                                    <i class="fa-solid fa-triangle-exclamation text-amber-600 mr-2"></i> Identifikasi Potensi Bahaya
+                                </span>
+                                <span class="px-4 py-2 rounded-xl bg-amber-50 text-amber-900 font-medium text-sm border border-amber-200 shadow-sm">
+                                    <i class="fa-solid fa-broom text-amber-600 mr-2"></i> Budaya 5R (Ringkas, Rapi, Resik, ...)
+                                </span>
+                                <span class="px-4 py-2 rounded-xl bg-slate-100 text-slate-800 font-medium text-sm border border-slate-200 shadow-sm">
+                                    <i class="fa-solid fa-bolt text-amber-500 mr-2"></i> Electrical Fundamentals
+                                </span>
+                                <span class="px-4 py-2 rounded-xl bg-slate-100 text-slate-800 font-medium text-sm border border-slate-200 shadow-sm">
+                                    <i class="fa-solid fa-compass-drafting text-indigo-600 mr-2"></i> Dasar Gambar Teknik
+                                </span>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h3 class="text-lg font-bold text-navy-900 mb-4 flex items-center gap-2">
+                                <i class="fa-solid fa-users text-gold-600"></i> Personal & Soft Skills
+                            </h3>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3.5 py-1.5 rounded-lg bg-navy-900 text-white text-xs font-semibold">Komunikatif</span>
+                                <span class="px-3.5 py-1.5 rounded-lg bg-navy-900 text-white text-xs font-semibold">Public Speaking</span>
+                                <span class="px-3.5 py-1.5 rounded-lg bg-navy-900 text-white text-xs font-semibold">Detail Oriented</span>
+                                <span class="px-3.5 py-1.5 rounded-lg bg-navy-900 text-white text-xs font-semibold">Adaptif & Inisiatif</span>
+                                <span class="px-3.5 py-1.5 rounded-lg bg-navy-900 text-white text-xs font-semibold">Kolaborasi Tim</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Certifications Cards -->
+                    <div class="lg:col-span-5 space-y-6">
+                        <h3 class="text-lg font-bold text-navy-900 mb-4 flex items-center gap-2">
+                            <i class="fa-solid fa-certificate text-gold-600"></i> Sertifikasi Formal
+                        </h3>
+
+                        <!-- Cert Card 1 -->
+                        <div class="p-6 rounded-2xl bg-gradient-to-br from-navy-900 to-navy-950 text-white shadow-xl relative overflow-hidden border border-slate-800">
+                            <div class="flex items-start justify-between mb-3">
+                                <div>
+                                    <span class="text-xs text-gold-400 font-bold uppercase tracking-wider">Tahun 2024</span>
+                                    <h4 class="text-lg font-bold text-white mt-1">Pendidikan Dasar K3 Umum</h4>
+                                </div>
+                                <i class="fa-solid fa-award text-3xl text-gold-400"></i>
+                            </div>
+                            <p class="text-xs text-slate-300">Penyelenggara: PT Mita Indonesia Berdaya</p>
+                            <p class="text-xs text-slate-400 mt-2 leading-relaxed">
+                                Meliputi materi regulasi K3, analisis risiko kerja, identifikasi potensi bahaya, dan penerapan budaya kerja 5R.
+                            </p>
+                        </div>
+
+                        <!-- Cert Card 2 -->
+                        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 text-slate-800 shadow-md">
+                            <div class="flex items-start justify-between mb-3">
+                                <div>
+                                    <span class="text-xs text-gold-600 font-bold uppercase tracking-wider">Tahun 2022</span>
+                                    <h4 class="text-lg font-bold text-navy-900 mt-1">Microsoft Office Professional</h4>
+                                </div>
+                                <i class="fa-solid fa-file-certificate text-3xl text-gold-600"></i>
+                            </div>
+                            <p class="text-xs text-slate-600">LPPK Sriwijaya Teknigraphy</p>
+                            <div class="mt-3 inline-block px-3 py-1 bg-emerald-100 text-emerald-800 text-xs font-bold rounded-md">
+                                Predikat Baik
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 bg-navy-950 text-white relative">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <h2 class="text-xs uppercase font-bold text-gold-400 tracking-widest mb-2">HUBUNGI SAYA</h2>
+                    <p class="text-3xl sm:text-4xl font-extrabold text-white">Mari Berdiskusi & Berkolaborasi</p>
+                    <div class="w-16 h-1 bg-gold-500 mx-auto mt-4 rounded-full"></div>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                    
+                    <!-- Contact Info Cards -->
+                    <div class="lg:col-span-5 space-y-6">
+                        <p class="text-slate-300 text-sm leading-relaxed">
+                            Saya terbuka untuk peluang karir di bidang <strong class="text-gold-400">Administrasi Operasional maupun Monitoring Lapangan</strong>. Silakan hubungi saya melalui saluran kontak berikut:
+                        </p>
+
+                        <div class="space-y-4">
+                            <a href="tel:085788462157" class="p-4 rounded-xl bg-slate-900 border border-slate-800 flex items-center space-x-4 hover:border-gold-500 transition-colors group">
+                                <div class="w-12 h-12 rounded-lg bg-gold-500/10 text-gold-400 flex items-center justify-center text-xl group-hover:bg-gold-500 group-hover:text-navy-950 transition-all">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-slate-400">Telepon / WhatsApp</p>
+                                    <p class="text-sm font-bold text-white">0857-8846-2157</p>
+                                </div>
+                            </a>
+
+                            <a href="mailto:mhendrawann07@gmail.com" class="p-4 rounded-xl bg-slate-900 border border-slate-800 flex items-center space-x-4 hover:border-gold-500 transition-colors group">
+                                <div class="w-12 h-12 rounded-lg bg-gold-500/10 text-gold-400 flex items-center justify-center text-xl group-hover:bg-gold-500 group-hover:text-navy-950 transition-all">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-slate-400">Email Utama</p>
+                                    <p class="text-sm font-bold text-white">mhendrawann07@gmail.com</p>
+                                </div>
+                            </a>
+
+                            <a href="https://linkedin.com/in/muhammad-hendrawan-0b33bb2a5" target="_blank" rel="noopener" class="p-4 rounded-xl bg-slate-900 border border-slate-800 flex items-center space-x-4 hover:border-gold-500 transition-colors group">
+                                <div class="w-12 h-12 rounded-lg bg-gold-500/10 text-gold-400 flex items-center justify-center text-xl group-hover:bg-gold-500 group-hover:text-navy-950 transition-all">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-slate-400">LinkedIn Profil</p>
+                                    <p class="text-sm font-bold text-white">linkedin.com/in/muhammad-hendrawan</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Interactive Form Mockup -->
+                    <div class="lg:col-span-7">
+                        <form id="contact-form" class="bg-slate-900 p-8 rounded-3xl border border-slate-800 space-y-4 shadow-2xl">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 mb-1">Nama Lengkap</label>
+                                    <input type="text" required placeholder="Nama Anda" class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-white text-sm focus:outline-none focus:border-gold-500 transition-colors">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 mb-1">Email Anda</label>
+                                    <input type="email" required placeholder="email@domain.com" class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-white text-sm focus:outline-none focus:border-gold-500 transition-colors">
+                                </div>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-1">Subjek Pesan</label>
+                                <input type="text" required placeholder="Peluang Karir / Pertanyaan" class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-white text-sm focus:outline-none focus:border-gold-500 transition-colors">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-1">Pesan</label>
+                                <textarea rows="4" required placeholder="Tuliskan pesan Anda di sini..." class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-white text-sm focus:outline-none focus:border-gold-500 transition-colors"></textarea>
+                            </div>
+                            <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-gold-500 to-gold-600 hover:from-gold-600 hover:to-gold-700 text-navy-950 font-bold text-sm shadow-xl transition-all">
+                                Kirim Pesan Langsung
+                            </button>
+                            <div id="form-status" class="hidden text-center text-sm font-medium text-emerald-400 pt-2">
+                                Pesan berhasil terkirim! Terima kasih telah menghubungi saya.
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-navy-950 border-t border-slate-900 py-8 text-center text-xs text-slate-500">
+        <div class="max-w-7xl mx-auto px-4">
+            <p>&copy; 2026 Muhammad Hendrawan. All rights reserved.</p>
+            <p class="mt-1 text-slate-600">Portofolio Profesional Administrasi & Monitoring Operasional</p>
+        </div>
+    </footer>
+
+    <!-- Interactive Scripts -->
+    <script>
+        // Mobile Navigation Toggle
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Contact Form Interactivity (Simulated Submit)
+        const contactForm = document.getElementById('contact-form');
+        const formStatus = document.getElementById('form-status');
+
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            formStatus.classList.remove('hidden');
+            contactForm.reset();
+            setTimeout(() => {
+                formStatus.classList.add('hidden');
+            }, 5000);
+        });
+    </script>
+</body>
+</html>
